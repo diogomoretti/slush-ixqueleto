@@ -14,9 +14,7 @@ gulp.task('connect', connect.server({
     root: __dirname + '/',
     port: 5000,
     livereload: true,
-    open: {
-        browser: 'Google Chrome'
-    }
+    open: true
 }));
 
 // HTML task
