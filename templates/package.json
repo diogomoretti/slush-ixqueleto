@@ -1,0 +1,17 @@
+{
+  "name": "<%= appNameSlug %>",
+  "description": "<%= appDescription %>",
+  "version": "<%= appVersion %>",
+  "author": {
+    "name": "<%= appAuthor %>",
+    "url": "<%= appEmail %>"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.2",
+    "gulp-stylus": "0.0.12",
+    "gulp-connect": "~0.3.0"
+  },
+  "dependencies": {
+    "gulp-plumber": "~0.5.6"
+  }
+}
