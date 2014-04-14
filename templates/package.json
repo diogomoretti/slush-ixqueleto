@@ -9,7 +9,9 @@
   "devDependencies": {
     "gulp": "~3.5.2",
     "gulp-stylus": "0.0.12",
-    "gulp-connect": "~0.3.0"
+    "gulp-connect": "~0.3.0",
+    "stylus": "*",
+    "nib": "*"
   },
   "dependencies": {
     "gulp-plumber": "~0.5.6"

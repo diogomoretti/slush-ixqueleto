@@ -5,7 +5,7 @@ var gulp    = require('gulp'),
     plumber = require('gulp-plumber');
 
 var paths = {
-    styles: '_src/stylus/**/*',
+    styles: 'src/stylus/**/*',
     html:   '*.html'
 };
 
@@ -27,7 +27,7 @@ gulp.task('html', function () {
 
 // Stylus task
 gulp.task('stylus', function () {
-    gulp.src('./_src/stylus/*.styl')
+    gulp.src('./src/stylus/*.styl')
         .pipe(plumber())
         .pipe(stylus({
             use: ['nib'], 
@@ -41,7 +41,8 @@ gulp.task('stylus', function () {
 gulp.task('default', ['stylus']);
 
 // Gulp watch
-gulp.task('server', ['stylus'], function () {
+gulp.task('server', function () {
+    gulp.task('connect');
     gulp.watch(paths.styles, ['stylus']);
     gulp.watch(paths.html, ['html']);
 });
