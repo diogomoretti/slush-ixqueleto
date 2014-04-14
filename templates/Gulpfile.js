@@ -37,12 +37,11 @@ gulp.task('stylus', function () {
         .pipe(connect.reload());
 });
 
-// Default gulp task to run
-gulp.task('default', ['stylus']);
-
-// Gulp watch
-gulp.task('server', function () {
-    gulp.task('connect');
+// Watch task
+gulp.task('watch', function () {
     gulp.watch(paths.styles, ['stylus']);
     gulp.watch(paths.html, ['html']);
 });
+
+// Set 'gulp server' for development
+gulp.task('server', ['connect', 'stylus', 'watch']);
