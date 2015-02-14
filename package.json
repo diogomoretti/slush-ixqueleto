@@ -1,6 +1,6 @@
 {
   "name": "slush-ixqueleto",
-  "version": "0.1.1",
+  "version": "1.0.1",
   "description": "Generate a simple web project using Slush and Gulp",
   "main": "slushfile.js",
   "scripts": {
