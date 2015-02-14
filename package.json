@@ -1,7 +1,7 @@
 {
   "name": "slush-ixqueleto",
   "version": "1.0.1",
-  "description": "Generate a simple web project using Slush and Gulp",
+  "description": "Generate a simple web project using Stylus and Gulp",
   "main": "slushfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
