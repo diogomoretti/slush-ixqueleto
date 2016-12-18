@@ -49,12 +49,8 @@ gulp.task('default', function(done) {
             gulp.src(__dirname + '/templates/**')
                 .pipe(template(answers))
                 .pipe(rename(function(file) {
-                    if (file.dirname[0] === '_') {
-                        file.dirname = '.' + file.dirname.slice(1);
-                    }
-
-                    if (file.basename[0] === '_') {
-                        file.basename = '.' + file.basename.slice(1);
+                    if (file.basename === '_gitignore') {
+                        file.basename = '.gitignore';
                     }
                 }))
                 .pipe(conflict('./'))
